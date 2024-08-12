@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body style="display: flex;justify-content: center;margin-top: 100px;">
+    
+    <div style="height: 280px; width: 30%;display: flex; flex-direction: column;align-items: center;border-radius: 20px;box-shadow: 1px 1px 10px 1px gray;">
+        <label for="" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 17px; margin-top: 35px;">Enter Any Number</label>
+    <input type="tel" style="height: 30px; width: 200px; text-align: center; border: 1px solid black;margin-top: 10px;" name="" id="prime">
+    <button onclick="prime()" style="height: 35px;width: 100px;cursor: pointer;margin-top: 20px;">Click</button>
+    
+  
+    <input type="tel" style="height: 30px; width: 200px; text-align: center; border: 1px solid black;margin-top: 20px;" name="" id="ans">
+
+    </div>
+
+</body>
+<script>
+
+    function prime()
+    {
+
+        let num=parseInt(document.getElementById("prime").value);
+
+        let a=1;
+        let count=0;
+
+        while(a<=num)
+        {
+            if(num%a==0)
+            {
+                count++;
+            }
+            a++;
+        }
+
+        if(count==2)
+        {
+            document.getElementById("ans").value="Prime Number";
+        }
+        else 
+        {
+            document.getElementById("ans").value="Not Prime Number";
+
+        }
+
+
+    }
+</script>
+</html>
