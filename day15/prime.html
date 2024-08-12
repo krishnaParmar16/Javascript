@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body align="center">
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Prime Number</h2>
+    <label for="" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter Any Number</label>
+    <br>
+    <input type="tel" name="" id="num" style="height: 30px; width: 180px;border: 1px solid black;margin-top: 10px;text-align: center;">
+    <br><br>
+    <button onclick="cal()" style="height: 30px;width: 80px;cursor: pointer;">Click</button><br><br>
+    
+    <h4 id="ans" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"></h4>
+
+
+</body>
+<script>
+    function cal()
+    {
+        let n=document.getElementById("num").value;
+
+        let b="";
+        for(let i=1;i<=n;i++)
+        {
+            if(primecheck(i))
+            {
+                b+=i+" ";
+            }
+        }
+
+        document.getElementById("ans").innerText=b;
+
+
+
+        function primecheck(a)
+        {
+            let count=0;
+            for(let y=1;y<=a;y++)
+            {
+                if(a%y==0)
+                {
+                    count++;
+                }
+            }
+
+            if(count==2)
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+        }
+
+    }
+</script>
+</html>

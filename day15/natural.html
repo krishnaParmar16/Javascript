@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Number</title>
+</head>
+<body align="center">
+
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Sum Of Natural Number</h2>
+    <label for="" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter Any Number</label>
+    <br>
+    <input type="tel" id="num" style="height: 30px; width: 180px;border: 1px solid black;margin-top: 10px;text-align: center;">
+    <br><br>
+    <button onclick="sumOfNaturalNumbers()" style="height: 30px;width: 80px;cursor: pointer;">Click</button>
+    <h4 id="ans"></h4>
+</body>
+<script>
+    function sumOfNaturalNumbers()
+    {
+        let n=parseInt(document.getElementById("num").value);
+
+
+        if(n<=0)
+        {
+            document.getElementById("ans").innerText="Please enter natural number";
+        }
+        else 
+        {
+            document.getElementById("ans").innerText=n*(n+1)/2;
+        }
+
+    }
+</script>
+</html>
