@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of Number</title>
+</head><style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        height: 280px;
+        width: 30%;
+        box-shadow: 1px 1px 10px 1px gray;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+</style>
+<body>
+    
+   <div class="main">
+    <label for="" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter Any Number</label>
+    <input type="tel" name="" id="num" style="height: 30px; width: 200px;border: 1px solid black;margin-top: 10px;text-align: center;">
+    <button onclick="cal()" style="height: 35px;width:80px;margin-top: 20px;cursor: pointer;">Click</button>
+    <label for="" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: 20px;">Addition Of Number</label>
+    <input type="text" name="" id="ans" style="height: 30px;text-align: center; width: 200px;border: 1px solid black;margin-top: 10px;">
+   </div>
+</body>
+<script>
+    function cal()
+    {
+        let n=parseInt(document.getElementById("num").value);
+        document.getElementById("ans").value=fact(n);
+        
+        function fact(a)
+        {
+            if(a<=0)
+            {
+                return 0;
+            }
+
+           return a+fact(a-1)
+        }
+
+       
+    }
+</script>
+</html>
