@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication table</title>
+</head>
+<body>
+    <label for="" style="font-size: 17px ;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter Any Number</label>
+    <br>
+    <input type="tel" id="num" style="height: 30px; width: 140px;border: 1px solid black;font-size: 17px ;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align:center;margin-top: 10px;">
+    <br><br>
+    <button type="button" onclick="cal()" style="height: 30px;width: 95px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;cursor: pointer;">Click</button>
+    <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" id="table"></div>
+</body>
+<script>
+    
+
+    function cal()
+    {
+
+        let num=parseInt(document.getElementById("num").value);
+        let multi;
+
+        for(i=1;i<=10;i++)
+        {
+
+           multi= num*i;
+
+           if(i%2===0)
+           {
+            continue;
+           }
+         console.log(num+"*"+i+"="+multi);
+        //  document.getElementById("table").innerHTML=(num+"*"+i+"="+multi);
+
+        }
+
+    }
+
+
+
+
+</script>
+</html>
