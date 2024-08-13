@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#prev {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin: 15px;
+}
+#next {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin: 15px;
+}
