@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Count Digits in a Number</title>
+</head>
+<style>
+    body{
+      background-color: rgb(238, 243, 247);
+  }
+  .main{
+      height: 250px;
+      width: 28%;
+      /* border: 1px solid black; */
+      box-shadow: 1px 1px 10px 1px gray;
+      display: flex;
+      /* background-color: rgba(255, 228, 196, 0.338) ; */
+      border-radius: 20px;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      margin-left: 37%;
+  }
+  button{
+      cursor: pointer;font-size: 16px; margin-bottom: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; height: 35px ;width: 90px;
+    
+  }
+  button:hover{
+      background-color: rgb(44, 44, 44);
+      color: white;
+      border: none;
+  }
+</style>
+<body>
+
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; text-align: center;margin-top: 50px;">Count Digits</h2>
+   
+    <div class="main">
+        <label for="" style="font-size: 17px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-bottom: 10px;margin-top: 35px;">Enter any number</label>
+        <input type="tel" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; height: 30px; font-size: 17px; width: 220px; border: 1px solid black;margin-bottom: 20px;" name="" id="num">
+        <button onclick="cal()">Click</button>
+        <input type="tel" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; height: 30px; font-size: 17px; width: 220px; border: 1px solid black;margin-bottom: 20px;" name="" id="ans">
+    </div>
+
+</body>
+
+<script>
+    
+    function cal()
+    {
+        let n=parseInt(document.getElementById("num").value);
+
+        let count=0;
+
+       while(n>0)
+       {
+        n=Math.floor(n/10);
+        count++;
+       }
+
+        document.getElementById("ans").value=count;
+    }
+
+</script>
+</html>
