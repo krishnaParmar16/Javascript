@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form{
+    height: 380px;
+    width: 35%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    box-shadow: 1px 1px 10px 1px rgba(146, 116, 146, 0.651);
+}
+#form label{
+    color: rgba(131, 93, 131, 0.651);
+}
+#form input{
+    height: 30px;
+    width: 220px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: rgba(131, 93, 131, 0.651);
+    text-align: center;
+}
+#form #submit{
+    height: 40px;
+    width: 220px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgba(131, 93, 131, 0.651);
+    border: none;
+    color: white;
+}
+#submit:hover{
+    box-shadow: 1px 1px 10px 1px gainsboro;
+}
+#form a{
+    font-size: 17px;
+    margin-top: 15px;
+    color: rgba(131, 93, 131, 0.651);
+    font-weight: bold;
+    text-decoration: none;
+}
+#form a:hover{
+    text-decoration: underline;
+}
+.box{
+    height: auto;
+    width: 70%;
+    /* border: 1px solid black; */
+    margin-bottom: 100px;
+}
+table{
+    box-shadow: 1px 1px 10px 1px rgba(146, 116, 146, 0.651);
+    /* background-color: rgba(146, 116, 146, 0.651); */
+    color: rgba(131, 93, 131, 0.651)
+}
+table thead #ti{
+    width: 280px;
+}
+table th,td{
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+}
+table tr td .img{
+    height: 180px;
+    width: 80%;
+    margin-left: 10%;
+}
+table tr td .btn1,.btn2{
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    /* color: rgba(131, 93, 131, 0.651); */
+    cursor: pointer;
+    width: 100%;
+}
+table tr td .btn1:hover,.btn2:hover{
+    text-shadow: 1px 1px gainsboro;
+}
+table tr .td2,.td3{
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
