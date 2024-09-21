@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+     <!-- jquery-cdn -->
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<style>
+
+    #cart-page{
+        height: auto;
+        width: 100%;
+        border: 1px solid  black;
+    }
+</style>
+
+<body>
+
+    <div class="head">
+        <div class="data">
+            <ul>
+                <li>
+                    <a href="">Do More,Be More</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Tryin3D</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">StoreLocator</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Singapore</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">UAE</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">John Jacobs</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Aqualens</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Cobrowsing</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Engineering Blog</a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="" id="lst">Partner With Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="con">
+            <a href="">Contact Us</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">   
+            <img src="images/main_logo.svg" alt="" class="logo-img">
+            <img src="images/new-toll-number.webp" alt="" class="num-img ms-3">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <input  type="search" placeholder="What are you looking for?" aria-label="Search" class="search ms-4">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item ms-4">
+                <a class="nav-link " href="#">Track Order</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#" id="model">Sign in & Sign Up</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i>&nbsp;&nbsp;Wishlist</a>
+              </li>
+               
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="cart.html"><i class="fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;Cart</a>
+              </li>
+             
+            </li>
+            </ul>
+             
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- header -->
+
+      <div class="opt">
+        <div class="type">
+            <ul>
+                <li>
+                    <a href="product.html">Eyeglasses
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Screen Glasses
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Kids Glasses
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Contact Lenses
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Sunglasses
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Home Eye-test
+                    </a>
+                </li>
+                <li>
+                    <a href="">Store Locator</a>
+                </li>
+            </ul>
+        </div>
+        <div class="t-img">
+           <div class="i1">
+             <img src="images/3dtryon1.png" alt="">
+        </div>
+           <div class="i2">
+             <img src="images/blulogo.png" alt="">
+            </div>
+           <div class="i3">
+             <img src="images/gold_max_logo_dc.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+<!-- about -->
+
+
+      <div id="signup" style="height: 500px;width: 38%;left: 31% ;border-radius: 10px;position: absolute;top: 50px; background-color:rgb(255, 255, 255);box-shadow:1px 1px 10px 1px rgba(128, 128, 128, 0.507);display: none;position: fixed;z-index: 1;">
+        <div class="heading" style="height: 10%; width: 85%;;display: flex; justify-content: space-between;align-items: center; margin-left: 7.5%;margin-top: 2%;">
+            <h4 style="color: #000042;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Create an Account</h4>
+            <button style="background-color: transparent;cursor: pointer;border: none;font-size: 18px;"><i class="fa fa-close " id="btn"></i></button>
+        </div>
+        <div style="height: 85%;width: 85%;margin-left: 7.5%;">
+            <form action="" id="form">
+                <input type="text" name="" class="form-control mt-4" id="fn" placeholder="First Name*" required>
+
+                <input type="text" name="" class="form-control mt-4" id="ln" placeholder="Last Name">
+
+                <input type="email" name="" class="form-control mt-4" id="email" placeholder="Email*" required>
+
+                <input type="password" name="" class="form-control mt-4 mb-3" id="password" placeholder="Password*" required>
+
+                <a href="" style="color: #000042;font-size: 13px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Got a Referral Code?
+             (optional)</a>
+                <p style="font-size: 13px;color: #000042;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 10px; " class="mt-3">By creating this account, you agree to our
+                    <u><b>Privacy Policy</b></u></p>
+        
+                <input type="submit" style="border-radius: 20px;color: #000042;background-color: #CCCCCC;" class="form-control mt-3" name="" id="btn1" placeholder="Create an Account">
+
+               <p style="font-size: 13px;color: #000042;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 10px; text-align: center; " class="mt-3">Have an account? <u>
+                <a href="" style="font-weight: bold;color: #000042;" id="loginpage">Login</a>
+               </u>
+               </p> 
+            </form>
+        </div>
+      </div>
+
+
+      <div id="login" style="height: 450px;width: 35%;left: 32.5% ;border-radius: 10px;position: absolute;top: 80px; background-color:rgb(255, 255, 255);box-shadow:1px 1px 10px 1px rgba(128, 128, 128, 0.507);position: fixed; z-index: 1; ">
+        <div class="heading" style="height: 50%; width: 100%;display: flex;position: relative; background-image: url(images/login-image.svg);background-position: center;border-top-left-radius: 10px;border-top-right-radius: 10px; background-repeat: no-repeat;background-size: cover;">
+         
+            <button style="background-color: transparent;cursor: pointer;border: none;font-size: 18px;position: absolute;right: 25px;top: 20px;background-color: white;height: 35px;width: 35px;border-radius: 50%;"><i class="fa fa-close " id="btn-close"></i></button>
+        </div>
+        <div style="height: 45%;width: 85%;margin-left: 7.5%;">
+            <form action="" id="form1">
+                <input type="email" name="" class="form-control mt-4" id="email1" placeholder="Email*" required>
+
+                <input type="password" name="" class="form-control mt-4 mb-3" id="password1" placeholder="Password*" required>
+
+                <input type="submit" style="border-radius: 20px;color: #000042;text-align: center; background-color: #CCCCCC;" class="form-control mt-3" name="" id="btn2" placeholder="Login">
+
+                <p style="font-size: 13px;color: #000042;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 10px; text-align: center; " class="mt-3">New member? <u>
+                    <a href="" id="signuppage" style="font-weight: bold;color: #000042;">Create an Account</a>
+                   </u>
+                   </p> 
+            </form>
+        </div>
+      </div>
+      
+      
+      <!-- login-signup -->
+    
+
+      <div id="cart-page">
+
+
+
+
+
+
+      </div>
+
+
+      <!-- cart -->
+
+
+
+
+
+
+
+
+    
+  <footer>
+    <div class="container">
+        <div class="f1">
+            <h1>Buy The Best Eyewear From Lenskart</h1>
+            <p class="p1">Lenskart Is The Leading E-Commerce Portal For Eyewear In India. It Has Revolutionised The Eyewear Industry In The Country With Its Omni-Channel Approach. From An Ever-Growing Number Of Offline Stores Across Major Cities In The Country To Innovative Integration Of Technology While Purchasing Online, Lenskart Caters To Every Customer With Several Deals And Offers.</p>
+            <p class="pp1">
+                A One-Stop Online Solution For Purchasing Eyewear And Its Accessories, Lenskart Delivers Them Right At Your Doorstep With Convenient Methods Of Payment. <span>Sunglasses</span> as well as <span>Eyeglasses</span> Are Available For Men And Women In A Diverse Array Of Styles And Trendy Colours. If You Want To Try Out <span>Contact Lenses</span>, Pick The Ones Of Your Choice From The Extensive Variety Of Coloured Contact Lenses From Our Online Store.
+            </p>
+        </div>
+
+        <div class="f2">
+            <div class="ff1">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="">Store Locator</a></li>
+                    <li><a href="">Buying Guide</a></li>
+                    <li><a href="">Frame Size</a></li>
+                </ul>
+            </div>
+            <div class="ff2">
+                <h5>About Us</h5>
+                <ul>
+                    <li>
+                        <a href="">We Are Hiring</a>
+                    </li>
+                    <li><a href="">Refer And Earn</a></li>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                    <li><a href="">Lenskart Coupons</a></li>
+                </ul>
+            </div>
+            <div class="ff3">
+                <h5>
+                    Help
+                </h5>
+                <ul>
+                    <li><a href="">FAQ's</a></li>
+                </ul>
+            </div>
+            <div class="ff4">
+                <div class="ii1">
+                    <img src="images/play-store.svg" alt="" style="margin-right: 10px;">
+                    <img src="images/app-store.svg" alt="">
+                </div>
+                <p> Download Lenskart App to buy
+                    Eyeglasses, Sunglasses and Contact Lenses</p>
+            </div>
+
+        </div>
+
+        <div class="f3">
+            <div class="ff5">
+                <p style="color: white;font-size: 15px; margin-top: 20px;cursor: pointer;">T & C</p>
+                <p style="color: white;font-size: 15px; margin-top: 20px;margin-left: 15%;cursor: pointer;">Privacy</p>
+                <p style="color: white;font-size: 15px; margin-top: 20px;margin-left: 15%;cursor: pointer;">Disclaimer</p>
+            </div>
+            <div class="ff6">
+                <p style="color: white;font-size: 15px; margin-top: 20px;margin-left: 45%;cursor: pointer;">Follow Us</p>
+                <i class="fa-brands fa-facebook" style="color: white;margin-left: 5%;font-size: 24px;"></i>
+                <i class="fa-brands fa-instagram" style="color: white;margin-left: 5%;font-size: 24px;"></i>
+                <i class="fa-brands fa-twitter" style="color: white;margin-left: 5%;font-size: 24px;"></i>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- footer -->
+    <script src="script/signup.js"></script>
+    <script src="script/login.js"></script>
+    <script src="script/cart.js"></script>
+    <script src="script/product.js"></script>
+   
+</body>
+
+
+<script>
+
+    document.getElementById("model").addEventListener("click",()=>{
+    
+        document.getElementById("signup").style.display="block";
+        // document.querySelectorAll("div").style.filter="blur(10px)";
+    })
+    
+    document.getElementById("loginpage").addEventListener("click",()=>{
+        document.getElementById("login").style.display="block";
+        document.getElementById("signup").style.display="none";
+    })
+    document.getElementById("btn").addEventListener("click",()=>{
+        document.getElementById("signup").style.display="none";
+        // document.querySelectorAll("div").style.filter="blur(0px)";
+    })
+    document.getElementById("btn-close").addEventListener("click",()=>{
+        document.getElementById("login").style.display="none";
+    })
+    
+    document.querySelector("div").addEventListener("click",()=>{
+        document.getElementById("signup").style.display="none";
+        document.getElementById("login").style.display="none";
+        // document.querySelectorAll("div").style.filter="blur(0px)";
+    })
+    
+    
+    
+    document.getElementById("loginpage").addEventListener("click",()=>{
+        document.getElementById("login").style.display="block";
+        document.getElementById("singup").style.display="none";
+    });
+    
+    document.getElementById("signuppage").addEventListener("click",()=>{
+        document.getElementById("signup").style.display="block";
+        document.getElementById("login").style.display="none"
+    })
+    
+    
+    </script>
+</html>
