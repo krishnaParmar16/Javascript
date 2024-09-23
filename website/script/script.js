@@ -51,7 +51,7 @@ function view()
         }
     }
 
-    setInterval(fnext,3000);
+    setInterval(fnext,2000);
 
     function fnext()
     {
