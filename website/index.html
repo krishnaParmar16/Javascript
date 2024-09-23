@@ -83,7 +83,7 @@
     </div>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">   
-            <img src="images/main_logo.svg" alt="" class="logo-img">
+            <a href="index.html"  class="logo-img"><img src="images/main_logo.svg" alt=""></a>
             <img src="images/new-toll-number.webp" alt="" class="num-img ms-3">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -98,7 +98,7 @@
                 <a class="nav-link" href="#" id="model">Sign in & Sign Up</a>
               </li>
               <li class="nav-item ms-3">
-                <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i>&nbsp;&nbsp;Wishlist</a>
+                <a class="nav-link" href="whishlist.html"><i class="fa-regular fa-heart"></i>&nbsp;&nbsp;Wishlist</a>
               </li>
                
               </li>
@@ -139,7 +139,7 @@
                 <input type="submit" style="border-radius: 20px;color: #000042;background-color: #CCCCCC;" class="form-control mt-3" name="" id="btn1" placeholder="Create an Account">
 
                <p style="font-size: 13px;color: #000042;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 10px; text-align: center; " class="mt-3">Have an account? <u>
-                <a href="" style="font-weight: bold;color: #000042;" id="loginpage">Login</a>
+                <a href="login.html" style="font-weight: bold;color: #000042;" id="loginpage">Login</a>
                </u>
                </p> 
             </form>
@@ -147,7 +147,7 @@
       </div>
 
 
-      <div id="login" style="height: 450px;width: 35%;left: 32.5% ;border-radius: 10px;position: absolute;top: 80px; background-color:rgb(255, 255, 255);box-shadow:1px 1px 10px 1px rgba(128, 128, 128, 0.507);position: fixed; z-index: 1; ">
+      <!-- <div id="login" style="height: 450px;width: 35%;left: 32.5% ;border-radius: 10px;position: absolute;top: 80px; background-color:rgb(255, 255, 255);box-shadow:1px 1px 10px 1px rgba(128, 128, 128, 0.507);position: fixed; z-index: 1; ">
         <div class="heading" style="height: 50%; width: 100%;display: flex;position: relative; background-image: url(images/login-image.svg);background-position: center;border-top-left-radius: 10px;border-top-right-radius: 10px; background-repeat: no-repeat;background-size: cover;">
          
             <button style="background-color: transparent;cursor: pointer;border: none;font-size: 18px;position: absolute;right: 25px;top: 20px;background-color: white;height: 35px;width: 35px;border-radius: 50%;"><i class="fa fa-close " id="btn-close"></i></button>
@@ -166,7 +166,7 @@
                    </p> 
             </form>
         </div>
-      </div>
+      </div> -->
 
 <!-- login-signup -->
 
@@ -819,7 +819,7 @@ document.getElementById("model").addEventListener("click",()=>{
 })
 
 document.getElementById("loginpage").addEventListener("click",()=>{
-    document.getElementById("login").style.display="block";
+    // document.getElementById("login").style.display="block";
     document.getElementById("signup").style.display="none";
 })
 document.getElementById("btn").addEventListener("click",()=>{
@@ -832,16 +832,16 @@ document.getElementById("btn-close").addEventListener("click",()=>{
 
 document.querySelector("div").addEventListener("click",()=>{
     document.getElementById("signup").style.display="none";
-    document.getElementById("login").style.display="none";
+    // document.getElementById("login").style.display="none";
     // document.querySelectorAll("div").style.filter="blur(0px)";
 })
 
 
 
-document.getElementById("loginpage").addEventListener("click",()=>{
-    document.getElementById("login").style.display="block";
-    document.getElementById("singup").style.display="none";
-});
+// document.getElementById("loginpage").addEventListener("click",()=>{
+//     document.getElementById("login").style.display="block";
+//     document.getElementById("singup").style.display="none";
+// });
 
 document.getElementById("signuppage").addEventListener("click",()=>{
     document.getElementById("signup").style.display="block";
@@ -858,7 +858,7 @@ document.getElementById("signuppage").addEventListener("click",()=>{
       centeredSlides: true,
       loop: true,
       autoplay: {
-        delay: 4000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       pagination: {
