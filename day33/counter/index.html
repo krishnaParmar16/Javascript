@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 style="color: darkcyan;margin-top: -50px;">Counter</h2>
+    <hr style="height: 2px;width: 100px;border: none;background-color: darkcyan;margin-top: -10px;margin-bottom: 20px;">
+    <div class="main">
+
+        <div class="box">
+         <div > <p id="hour">00</p> <p class="data">Hours</p> </div> 
+         <div> <p  id="minute">00</p><p class="data">Minutes</p></div> 
+         <div> <p id="seconds">00</p><p class="data">Seconds</p></div>
+        </div>
+
+       <div class="btn">
+        <button id="start" onclick="start()">Start</button>
+        <button id="stop" onclick="stop()">Stop</button>
+        <button id="reset" onclick="reset()">Reset</button>
+       </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

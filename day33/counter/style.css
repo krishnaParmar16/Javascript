@@ -1,0 +1,78 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.main{
+    height: 300px;
+    width: 420px;
+    /* border: 1px solid black; */
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px  gray;
+}
+.main .box{
+    margin-top: 12%;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.main .box div{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.516);
+    /* border: 1px solid black; */
+}
+.main .box div .data{
+    margin-bottom: 1px;
+    margin-top: -10px;
+    /* border: 1px solid black; */
+    font-size: 14px;
+    color: darkcyan;
+}
+.main .box div #hour,#minute,#seconds{
+    margin-top:10px;
+    color: darkcyan;
+    font-weight: bold ;
+    font-size: 17px;
+    /* border: 1px solid black; */
+}
+.main .btn{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.main .btn button{
+    height: 35px;
+    width: 80px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    font-size: 16px;
+    transition: 1s;
+}
+.main .btn button:hover{
+    margin-bottom: 1px;
+    box-shadow:1px 1px 10px 1px gainsboro ;
+}
