@@ -1,7 +1,14 @@
 {
   "users": [
     {
-      "id": "a42d",
+      "id": "79bb",
+      "Firstname": "Krishna",
+      "Lastname": "Parmar",
+      "Email": "kp@gmail.com",
+      "Password": "12345"
+    },
+    {
+      "id": "2059",
       "Firstname": "krishna",
       "Lastname": "parmar",
       "Email": "k@gmail.com",
@@ -170,8 +177,48 @@
       "price": " 2000"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "4",
+      "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/tortoise-gold-full-rim-cat-eye-vincent-chase-blend-edit-vc-e14107-c2-eyeglasses_vincent-chase-vc-e14107-c2-c2-eyeglasses_vincent-chase-vc-e14107-c2-c2-eyeglasses_g_8488_5july23.jpg",
+      "rating": "4.8",
+      "pepole": "40",
+      "title": "Vincent Chase",
+      "size": "Narrow",
+      "edit": "Retro",
+      "price": "2000"
+    },
+    {
+      "id": "12",
+      "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/Black-Gold-Full-Rim-Rectangle-Lenskart-Air-Signia-LA-E11289-C2-Eyeglasses_lenskart-air-la-e11289-c2-eyeglasses_G_083309_02_2022.jpg",
+      "rating": "4.6",
+      "pepole": "376",
+      "title": "Lenskart Hustlr",
+      "size": "Medium",
+      "edit": "Amber",
+      "price": " 2000"
+    }
+  ],
   "whishlist": [
-    
+    {
+      "id": "4",
+      "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/tortoise-gold-full-rim-cat-eye-vincent-chase-blend-edit-vc-e14107-c2-eyeglasses_vincent-chase-vc-e14107-c2-c2-eyeglasses_vincent-chase-vc-e14107-c2-c2-eyeglasses_g_8488_5july23.jpg",
+      "rating": "4.8",
+      "pepole": "40",
+      "title": "Vincent Chase",
+      "size": "Narrow",
+      "edit": "Retro",
+      "price": "2000"
+    },
+    {
+      "id": "12",
+      "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/Black-Gold-Full-Rim-Rectangle-Lenskart-Air-Signia-LA-E11289-C2-Eyeglasses_lenskart-air-la-e11289-c2-eyeglasses_G_083309_02_2022.jpg",
+      "rating": "4.6",
+      "pepole": "376",
+      "title": "Lenskart Hustlr",
+      "size": "Medium",
+      "edit": "Amber",
+      "price": " 2000"
+    }
   ]
 }
