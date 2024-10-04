@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+ 
+<!-- header -->
+<header>
+    <div class="logo"><a href="index.html"><img src="logo.jpg" alt=""></a></div>
+    <div class="location pt-2 ps-2">
+        <a href=""><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i><span class="ms-2">Update
+                location</span></a>
+        <div class="input-group mb-3 search">
+            <span class="input-group-text">
+                <select>
+                    <option value="">All</option>
+                    <option value="">All Categories</option>
+                    <option value="">All Skills</option>
+                    <option value="">Amazon Devices</option>
+                    <option value="">Amazon Fashion</option>
+                    <option value="">Amazon Pharmacy</option>
+                    <option value="">Appliances</option>
+                    <option value="">Apps & Games</option>
+                    <option value="">Audible Audiobooks</option>
+                    <option value="">Baby</option>
+                    <option value="">Beauty</option>
+                    <option value="">Books</option>
+                    <option value=""> Car & Motorbike</option>
+                    <option value="">Clothing & Accessories</option>
+                    <option value="">Collectibles</option>
+                    <option value="">Computers & Accessories</option>
+                    <option value="">Deals</option>
+                </select>
+            </span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                placeholder="Search Amazon.in">
+            <span class="input-group-text ser"><i class="fa-solid fa-magnifying-glass"
+                    style="color: #000000;"></i></span>
+        </div>
+    </div>
+    <div class="account">
+        
+        <div class="language">
+            <input type="radio"><span>English-EN</span><br>
+            <hr>
+            <input type="radio"><span>हिन्दी - HI</span><br>
+            <input type="radio"><span>தமிழ் - TA </span><br>
+            <input type="radio"><span>తెలుగు - TE </span><br>
+            <input type="radio"><span>ಕನ್ನಡ - KN </span><br>
+            <input type="radio"><span>മലയാളം - ML</span><br>
+            <input type="radio"><span>বাংলা - BN </span><br>
+            <input type="radio"><span>मराठी - MR</span>
+            <hr>
+            <p>You are shopping on Amazon.in</p>
+        </div>
+
+        <div class="acc2" id="acc2" style="position: absolute; top: 0; right: 16%;"><span
+                style="font-size: 10px;">Hello, sign in</span>
+            <p style="font-size: 12px;">Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+        </div>
+        <div class="acco">
+            <div class="acco1" style="width: 50%;">
+                <h6>Your Account</h6>
+                <p>Create a Wish List</p>
+                <p> Wish from Any Website</p>
+                <p> Baby Wishlist</p>
+                <p> Discover Your Style</p>
+                <p> Explore Showroom </p>
+
+
+            </div>
+            <div class="acco2">
+                <h6>Your Lists </h6>
+                <p> Switch Accounts</p>
+                <p><a href="">Sign Out</a></p>
+                <p> Your Account</p>
+                <p> Your Orders</p>
+                <p> Your Wish List</p>
+                <p> Keep shopping for</p>
+                <p> Your Recommendations</p>
+                <p> Recalls and Product Safety Alerts</p>
+                <p> Your Prime Membership</p>
+                <p> Your Prime Video</p>
+                <p> Your Subscribe & Save Items</p>
+                <p> Memberships & Subscriptions</p>
+                <p> Your Seller Account</p>
+                <p> Content Library</p>
+                <p> Devices</p>
+                <p> Your Free Amazon Business Account</p>
+            </div>
+        </div>
+        <div class="acc3" style="position: absolute; top: 0; right: 9%;"><span
+                style="font-size: 10px;">Returns</span>
+            <p style="font-size: 12px;">& Orders</p>
+        </div>
+        <div class="acc4" style="position: absolute; top: 0; right: 2%; padding: 13px;">
+            <a href="cart.html" style="text-decoration: none; color: white;"><i class="fa-solid fa-cart-plus fa-lg" style="color: #ffffff;"></i> Cart</a>
+        </div>
+    </div>
+</header>
+
+
+    
+    <div id="cart-box">
+ 
+
+    </div>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

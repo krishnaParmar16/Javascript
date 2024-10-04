@@ -1,0 +1,28 @@
+{
+  "cart": [
+    {
+      "id": "b798",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a556elbhins/gallery/in-galaxy-a55-5g-sm-a556-sm-a556elbhins-thumb-540254043",
+      "title": "mobile",
+      "price": "25000"
+    },
+    {
+      "id": "c489",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a556elbhins/gallery/in-galaxy-a55-5g-sm-a556-sm-a556elbhins-thumb-540254043",
+      "title": "mobile",
+      "price": "25000"
+    },
+    {
+      "id": "6c67",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a556elbhins/gallery/in-galaxy-a55-5g-sm-a556-sm-a556elbhins-thumb-540254043",
+      "title": "mobile",
+      "price": "25000"
+    },
+    {
+      "id": "c375",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-a556elbhins/gallery/in-galaxy-a55-5g-sm-a556-sm-a556elbhins-thumb-540254043",
+      "title": "mobile",
+      "price": "25000"
+    }
+  ]
+}

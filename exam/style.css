@@ -1,0 +1,142 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#cart-box{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.detail h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.box{
+    height: 250px;
+    width: 20%;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px 1px gray;
+}
+.box:hover{
+    /* box-shadow: 1px 1px 5px 1px gray; */
+    cursor: pointer;
+}
+.box .img{
+    height: 65%;
+    width: 100%;
+    /* width: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.box .img img{
+    height: 90%;
+    width: 90%;
+}
+.box .p{
+    height: 35%;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.box .p h5{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.box .p p{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+header .logo{
+    height: 100%;
+    width: 12%;
+    text-align: center;
+    padding-top: 8px;
+}
+header .logo img{
+    height: 95%;
+    width: 70%;
+}
+header .location{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .location a{
+    color: white;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+header .location .search{
+    width: 80%;
+    margin-top: 10px;
+}
+header .location .search select{
+    border: none;
+    background-color: none;
+    width: 40px;
+}
+header .location .ser{
+    background-color: #E8B86D;
+}
+header .account{
+    height: 100%;
+    width: 30%;
+    color: white;
+    padding: 5px;
+    /* border: 1px solid white; */
+    
+   
+}
+header .account .language{
+    background-color: white;
+    color: black;
+    width: 250px;
+    padding: 20px;
+    display: none;
+}
+header .account .indenflag{
+    height: 10px;
+}
+.acc1,.acc2,.acc3,.acc4{
+    /* border: 1px solid white; */
+    width: 100px;
+    height: 100%;
+    text-align: center;
+}
+.acc1:hover,.acc2:hover,.acc3:hover,.acc4:hover{
+    border: 1px solid white;
+}
+.acco{
+    background-color: white;
+    color: black;
+    width: 350px;
+    padding: 20px;
+    display: none;
+    margin-left: 20%;
+}
+.acco1 p,.acco2 p{
+    font-size: 10px;
+    
+}
